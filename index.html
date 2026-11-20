@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BÁSAP 글라이신 리볼륨 샴푸 | 스트레스 케어 인트로 샴푸</title>
+<meta name="description" content="누적 펀딩 1억 원+, 와디즈 15,005% 달성 바삽이 돌아왔습니다. 글라이신 2% 처방의 바삽 글라이신 리볼륨 샴푸.">
+<meta property="og:title" content="BÁSAP 글라이신 리볼륨 샴푸">
+<meta property="og:description" content="지하철에서 신경 쓰이던 정수리, 오늘부터 샴푸부터 바꾸세요.">
+<meta property="og:image" content="assets/img/product-duo.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/pretendard-800.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Pretendard';font-weight:400;font-display:swap;src:url(assets/fonts/pretendard-400.woff2) format('woff2')}
+@font-face{font-family:'Pretendard';font-weight:500;font-display:swap;src:url(assets/fonts/pretendard-500.woff2) format('woff2')}
+@font-face{font-family:'Pretendard';font-weight:700;font-display:swap;src:url(assets/fonts/pretendard-700.woff2) format('woff2')}
+@font-face{font-family:'Pretendard';font-weight:800;font-display:swap;src:url(assets/fonts/pretendard-800.woff2) format('woff2')}
+@font-face{font-family:'BASAP Serif';font-weight:400;font-display:swap;src:url(assets/fonts/basap-serif.woff2) format('woff2')}
+
+:root{
+  --ink:#23281F; --ink-2:#4A463E; --muted:#6E6A60; --muted-2:#8C877C;
+  --cream:#F4EFE6; --paper:#FAF8F3; --white:#FFFFFF; --line:#E2DACB;
+  --olive:#3E5022; --olive-2:#556B2F; --leaf:#C9DBA0; --leaf-2:#E4ECD2; --mint:#DCEBD8;
+  --red:#E5322D; --gold:#8A6A1F; --night:#1B2026; --cocoa:#1E1A14;
+  --wrap:1180px; --r:20px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:'Pretendard',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;color:var(--ink);background:var(--white);line-height:1.6;word-break:keep-all;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3,p{margin:0}
+.wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.section{padding:120px 0}
+.eyebrow{font-family:'BASAP Serif',serif;-webkit-text-stroke:.022em currentColor;letter-spacing:.08em;font-size:15px;color:var(--gold);text-transform:uppercase}
+.h2{font-size:clamp(30px,4.2vw,48px);font-weight:800;letter-spacing:-.03em;line-height:1.3}
+.lead{font-size:clamp(17px,1.8vw,20px);color:var(--ink-2);line-height:1.75}
+.hl{color:var(--olive-2)}
+.red{color:var(--red)}
+.center{text-align:center}
+.note{font-size:13px;color:var(--muted-2);line-height:1.7}
+.tag{display:inline-block;padding:4px 10px;border-radius:999px;background:var(--leaf-2);color:var(--olive);font-size:12px;font-weight:700;letter-spacing:.02em}
+.sample{display:inline-block;padding:2px 8px;border-radius:6px;background:#EFE9DD;color:var(--muted);font-size:11px;font-weight:700;vertical-align:middle}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 30px;border-radius:999px;background:var(--olive);color:#fff;font-size:17px;font-weight:800;text-decoration:none;letter-spacing:-.01em;transition:transform .15s ease,background .15s ease}
+.btn:hover{background:#2F3D19;transform:translateY(-1px)}
+.btn:focus-visible,.nav a:focus-visible,summary:focus-visible,.check input:focus-visible+span{outline:3px solid var(--red);outline-offset:3px}
+.btn--ghost{background:transparent;color:var(--olive);border:2px solid var(--olive)}
+.btn--ghost:hover{background:var(--olive);color:#fff}
+
+/* header */
+.header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid transparent;transition:border-color .2s}
+.header.is-scrolled{border-color:var(--line)}
+.header__in{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo img{height:26px;width:auto}
+.nav{display:flex;align-items:center;gap:28px}
+.nav a{font-size:15px;font-weight:700;color:var(--ink-2);text-decoration:none}
+.nav a:hover{color:var(--olive)}
+.nav .btn{min-height:44px;padding:0 20px;font-size:15px;color:#fff}
+.menu-btn{display:none;width:44px;height:44px;border:0;background:transparent;border-radius:10px;cursor:pointer}
+.menu-btn svg{display:block;margin:auto}
+
+/* hero */
+.hero{background:linear-gradient(180deg,#CBDDA4 0%,#C9DBA0 100%);overflow:hidden}
+.hero__in{display:grid;grid-template-columns:1.05fr 1fr;align-items:center;gap:40px;min-height:640px;padding-top:60px;padding-bottom:60px}
+.hero h1{font-size:clamp(36px,5.2vw,62px);font-weight:800;line-height:1.22;letter-spacing:-.035em}
+.hero__sub{margin-top:22px;font-size:clamp(17px,1.9vw,21px);color:var(--ink-2);line-height:1.7}
+.hero__cta{margin-top:36px;display:flex;flex-wrap:wrap;gap:12px}
+.hero__stats{margin-top:48px;display:grid;grid-template-columns:repeat(3,auto);gap:28px;justify-content:start}
+.stat b{display:block;font-size:clamp(24px,2.6vw,32px);font-weight:800;letter-spacing:-.03em;color:var(--olive)}
+.stat span{font-size:14px;color:var(--ink-2);font-weight:500}
+.hero__img{position:relative}
+.hero__img img{width:100%;border-radius:28px}
+.hero__badge{position:absolute;left:-18px;bottom:28px;padding:14px 18px;border-radius:16px;background:#fff;box-shadow:0 12px 30px rgba(35,40,31,.14);font-size:14px;font-weight:700;line-height:1.4}
+.hero__badge b{display:block;font-size:22px;color:var(--olive);font-weight:800}
+
+/* problem */
+.problem{background:var(--white)}
+.problem__grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.big300{display:flex;align-items:baseline;gap:6px;color:var(--red);font-weight:800;letter-spacing:-.05em;line-height:1}
+.big300 b{font-size:clamp(110px,15vw,190px)}
+.big300 span{font-size:clamp(40px,5vw,60px)}
+.bars{margin-top:40px;display:flex;flex-direction:column;gap:16px;max-width:520px}
+.bar{display:grid;grid-template-columns:96px 1fr auto;align-items:center;gap:14px;font-size:15px;color:var(--muted)}
+.bar i{display:block;height:16px;border-radius:999px;background:#B9B4AA}
+.bar--hot i{background:var(--red)}
+.bar strong{font-weight:800;color:var(--ink)}
+.bar--hot strong{color:var(--red)}
+.problem__media{position:relative;border-radius:28px;overflow:hidden;background:#fafafa}
+.problem__media img{width:100%;max-height:640px;object-fit:cover}
+.stress{margin-top:100px;display:grid;grid-template-columns:1fr 1fr;border-radius:28px;overflow:hidden;background:var(--night);color:#fff}
+.stress img{width:100%;height:100%;object-fit:cover}
+.stress__txt{padding:56px 52px;display:flex;flex-direction:column;justify-content:center;gap:18px}
+.stress__txt .num{font-size:clamp(56px,7vw,88px);font-weight:800;line-height:1;letter-spacing:-.04em;color:#FF6A5C}
+.stress__txt .note{color:#9AA0A6}
+
+/* subway */
+.subway{background:var(--cream)}
+.subway__grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.subway__img{border-radius:28px;overflow:hidden}
+.subway__img img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.subway .h2 em{font-style:normal;color:var(--red)}
+
+/* check */
+.check-sec{background:#0B0B0B;color:#fff}
+.check-list{margin:56px auto 0;max-width:760px;display:grid;gap:12px}
+.check{display:block;cursor:pointer}
+.check input{position:absolute;opacity:0;pointer-events:none}
+.check span{display:flex;align-items:center;gap:18px;padding:22px 26px;border-radius:18px;background:#1C1C1C;border:2px solid #2A2A2A;font-size:clamp(17px,2vw,20px);font-weight:500;transition:border-color .15s,background .15s}
+.check span::before{content:"";flex-shrink:0;width:28px;height:28px;border-radius:8px;border:2px solid #5A5A5A;background:#111 center/18px no-repeat}
+.check input:checked+span{border-color:var(--red);background:#241414}
+.check input:checked+span::before{border-color:var(--red);background-color:var(--red);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E")}
+.check b{font-weight:800}
+.check i{font-style:normal;flex:1}
+.check-result{margin:44px auto 0;max-width:760px;text-align:center;padding:36px 28px;border-radius:22px;background:#161616}
+.check-result .h2 .asap{font-family:'BASAP Serif',serif;-webkit-text-stroke:.03em currentColor;letter-spacing:.06em;color:var(--red)}
+.check-result p{margin-top:12px;color:#B5B5B5}
+#checkCount{color:var(--red)}
+.check-sec .note{color:#7D7D7D;margin-top:22px}
+
+/* adult */
+.adult{background:var(--cream)}
+.adult__grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.adult__num{font-size:clamp(46px,6vw,72px);font-weight:800;letter-spacing:-.04em;line-height:1.15}
+.adult__img img{border-radius:28px;width:100%}
+
+/* voices */
+.voices{background:var(--night);color:#fff}
+.voices .h2 .hl{color:#C9DBA0}
+.voice-grid{margin-top:56px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.voice{padding:28px 24px;border-radius:20px;background:#262C33;font-size:17px;line-height:1.65;color:#D7DBDF}
+.voice::before{content:"\201C";display:block;font-family:Georgia,serif;font-size:44px;line-height:.6;height:22px;color:#C9DBA0}
+.voice b{color:#fff;font-weight:800}
+
+/* back */
+.back{background:var(--leaf)}
+.back__stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
+.back__stats div{padding:30px 20px;border-radius:20px;background:rgba(255,255,255,.62);text-align:center}
+.back__stats b{display:block;font-size:clamp(30px,3.6vw,44px);font-weight:800;letter-spacing:-.03em;color:var(--olive)}
+.back__stats span{font-size:15px;font-weight:700;color:var(--ink-2)}
+.back__product{margin-top:64px;display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+.back__product img{border-radius:28px;width:100%}
+.back__name{font-family:'BASAP Serif',serif;-webkit-text-stroke:.022em currentColor;letter-spacing:.04em;font-size:clamp(28px,3.4vw,40px);color:var(--olive)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.chips span{padding:8px 14px;border-radius:999px;background:var(--olive);color:#fff;font-size:14px;font-weight:700}
+
+/* promise */
+.promise{position:relative;display:grid;grid-template-columns:1fr 1fr;background:var(--leaf)}
+.promise img{width:100%;height:100%;object-fit:cover}
+.promise__txt{display:flex;flex-direction:column;justify-content:center;padding:64px 56px;background:var(--olive);color:#fff}
+.promise__txt .h2{color:#fff;font-size:clamp(28px,3.4vw,42px);margin:0}
+.promise__txt .h2 span{color:#D7E8A0}
+.promise__txt p{margin-top:20px;font-size:19px;color:#DCEBD8}
+
+/* difference */
+.diff{background:var(--olive);color:#fff}
+.diff .eyebrow{color:#D7E8A0}
+.diff .lead{color:#DCEBD8}
+.diff__hero{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-top:20px}
+.diff__hero img{border-radius:28px}
+.glycine{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-top:24px}
+.glycine b{font-size:clamp(56px,7vw,84px);font-weight:800;letter-spacing:-.04em;line-height:1;color:#D7E8A0}
+.glycine span{font-size:18px;color:#DCEBD8;font-weight:700}
+.diff__cards{margin-top:56px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.diff__card{padding:36px 32px;border-radius:22px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16)}
+.diff__card small{font-size:13px;font-weight:800;letter-spacing:.12em;color:#D7E8A0}
+.diff__card h3{margin-top:10px;font-size:26px;font-weight:800}
+.diff__card p{margin-top:10px;color:#DCEBD8;font-size:17px}
+.diff__sum{margin-top:40px;text-align:center;font-size:clamp(20px,2.4vw,26px);font-weight:700}
+.diff__sum b{color:#D7E8A0;font-weight:800}
+
+/* clinical */
+.clinical{background:var(--cream)}
+.clin{margin-top:56px;display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:end;padding:48px;border-radius:28px;background:#fff}
+.clin__bars{display:flex;align-items:flex-end;gap:32px}
+.clin__bar{display:flex;flex-direction:column;align-items:center;gap:12px}
+.clin__bar i{display:block;width:110px;border-radius:12px 12px 0 0}
+.clin__bar em{font-style:normal;font-size:16px;color:var(--muted);font-weight:500}
+.clin__bar b{font-size:22px;color:var(--muted-2)}
+.clin__bar--after b{font-size:36px;color:var(--olive-2)}
+.clin__bar--after em{color:var(--ink);font-weight:700}
+.clin__meta{display:grid;grid-template-columns:1fr 1fr;gap:22px 16px;padding:32px;border-radius:20px;background:var(--cream);align-self:center}
+.clin__meta span{display:block;font-size:14px;color:var(--muted-2);font-weight:500}
+.clin__meta b{font-size:20px}
+
+/* points */
+.points{background:var(--white)}
+.point-nav{margin-top:48px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.point-nav a{display:block;border-radius:20px;overflow:hidden;background:var(--cream);text-decoration:none;transition:transform .15s}
+.point-nav a:hover{transform:translateY(-3px)}
+.point-nav img{width:100%;aspect-ratio:756/500;object-fit:cover}
+.point-nav div{padding:18px 18px 22px}
+.point-nav small{font-weight:800;color:var(--muted-2);font-size:13px}
+.point-nav h3{font-size:19px;font-weight:800;margin-top:4px;line-height:1.35}
+.point-nav p{font-size:14px;color:var(--ink-2);margin-top:4px}
+.point-nav p b{color:var(--red)}
+.point{padding:110px 0}
+.point--1{background:#E0E9F2}
+.point--2{background:#F5EDE8}
+.point--3{background:#E4ECD2}
+.point--4{background:var(--cocoa);color:#fff}
+.point__head .tag{background:rgba(255,255,255,.7)}
+.point--4 .point__head .tag{background:rgba(255,255,255,.12);color:#E9D7A8}
+.point__title{margin-top:16px;font-size:clamp(28px,3.8vw,44px);font-weight:800;letter-spacing:-.03em;line-height:1.35}
+.point__grid{margin-top:48px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.point__grid img{border-radius:24px;width:100%}
+.point__list{display:grid;gap:12px}
+.point__item{padding:22px 24px;border-radius:18px;background:rgba(255,255,255,.75)}
+.point__item h4{margin:0;font-size:19px;font-weight:800}
+.point__item h4 small{margin-left:6px;font-size:13px;color:var(--muted-2);font-weight:500}
+.point__item p{margin-top:4px;font-size:16px;color:var(--ink-2)}
+.point--4 .point__item{background:rgba(255,255,255,.07)}
+.point--4 .point__item p,.point--4 .lead{color:#CFC6B4}
+.point--4 .point__item h4 small{color:#A39A88}
+.wide-img{margin-top:48px;border-radius:24px;overflow:hidden}
+.wide-img img{width:100%;max-height:520px;object-fit:cover}
+.up{display:inline-block;margin-left:6px;padding:2px 10px;border-radius:999px;background:var(--red);color:#fff;font-size:.6em;vertical-align:middle;font-weight:800}
+.causes{margin-top:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.causes div{padding:20px;border-radius:16px;background:#fff;text-align:center}
+.causes b{display:block;font-size:20px}
+.causes span{font-size:14px;color:var(--muted)}
+.research{margin-top:28px;display:flex;gap:24px;align-items:center;padding:24px 28px;border-radius:18px;background:#fff}
+.research__bars{display:flex;gap:14px;align-items:flex-end;height:120px;flex-shrink:0}
+.research__bars div{display:flex;flex-direction:column;align-items:center;gap:6px;font-size:13px;color:var(--muted)}
+.research__bars i{display:block;width:44px;border-radius:6px 6px 0 0}
+.paper{margin-top:28px;padding:24px 28px;border-radius:18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14)}
+.paper small{font-size:12px;letter-spacing:.1em;color:#E9D7A8;font-weight:800}
+.paper p{margin-top:8px;color:#E7E0D2;font-size:15px}
+.mini-ba{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.mini-ba figure{margin:0;padding:18px;border-radius:18px;text-align:center}
+.mini-ba figcaption{margin-top:6px;font-weight:800;font-size:15px}
+
+/* reviews */
+.reviews{background:var(--cream)}
+.prev{margin-top:48px;display:grid;grid-template-columns:1fr 1.3fr;gap:32px;align-items:center;padding:32px;border-radius:28px;background:#fff}
+.prev img{border-radius:18px;width:100%}
+.prev__count{font-size:clamp(40px,5vw,58px);font-weight:800;letter-spacing:-.04em;color:var(--olive);line-height:1.1}
+.rv-grid{margin-top:20px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.rv-grid--2{grid-template-columns:repeat(2,1fr)}
+.rv{display:flex;flex-direction:column;gap:12px;padding:28px 26px;border-radius:22px;background:#fff}
+.rv__top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.stars{color:#E8A317;letter-spacing:2px;font-size:16px}
+.rv h3{font-size:21px;font-weight:800;line-height:1.45;letter-spacing:-.02em}
+.rv p{font-size:16px;color:var(--ink-2)}
+.rv footer{margin-top:auto;font-size:14px;color:var(--muted-2);font-weight:500}
+.rv mark{background:none;color:var(--olive-2);font-weight:800}
+.rv-sub{margin-top:64px;display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap}
+.rv-sub h3{font-size:24px;font-weight:800}
+
+/* how */
+.how{background:#EEF5F4}
+.steps{margin-top:56px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.step{border-radius:22px;overflow:hidden;background:#fff;display:flex;flex-direction:column}
+.step img{width:100%;aspect-ratio:5/4;object-fit:cover}
+.step div{padding:22px 22px 26px;display:flex;flex-direction:column;gap:8px;flex:1}
+.step .n{width:36px;height:36px;border-radius:50%;background:var(--olive);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}
+.step h3{font-size:21px;font-weight:800}
+.step .time{align-self:flex-start;padding:4px 12px;border-radius:999px;background:#D6E9E8;color:#1E3F41;font-size:14px;font-weight:700}
+.step p{font-size:15px;color:var(--ink-2)}
+.step--gift{outline:3px solid var(--olive);outline-offset:-3px}
+
+/* gift */
+.gift{background:var(--mint)}
+.gift__grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.gift__grid img{border-radius:28px;width:100%}
+.who{margin-top:32px;display:grid;gap:10px}
+.who div{display:flex;gap:16px;align-items:center;padding:18px 22px;border-radius:16px;background:#fff}
+.who b{flex-shrink:0;width:76px;color:var(--olive);font-weight:800}
+.who span{color:var(--ink-2)}
+.pair{margin-top:20px;padding:24px 26px;border-radius:18px;background:var(--olive);color:#fff;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.pair b{font-size:22px}
+.pair span{color:#DCEBD8}
+
+/* rewards */
+.reward{background:var(--white)}
+.bonus{margin-top:40px;display:flex;gap:20px;align-items:center;padding:24px 28px;border-radius:20px;background:var(--cream)}
+.bonus img{width:120px;border-radius:12px;flex-shrink:0}
+.bonus b{display:block;font-size:20px}
+.tier{margin-top:56px}
+.tier__head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.tier__head h3{font-size:26px;font-weight:800}
+.tier__head small{font-family:'BASAP Serif',serif;letter-spacing:.08em;color:var(--gold);font-size:14px;-webkit-text-stroke:.02em currentColor}
+.tier__head p{width:100%;color:var(--muted);font-size:15px}
+.cards{margin-top:20px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cards--2{grid-template-columns:repeat(3,1fr)}
+.card{position:relative;display:flex;flex-direction:column;border-radius:22px;border:1px solid var(--line);overflow:hidden;background:#fff}
+.card--best{border:3px solid var(--olive)}
+.card__flag{position:absolute;left:16px;top:16px;padding:6px 12px;border-radius:999px;background:var(--red);color:#fff;font-size:13px;font-weight:800}
+.card img{width:100%;aspect-ratio:1464/760;object-fit:cover;background:var(--paper)}
+.card__body{padding:22px 22px 24px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card h4{margin:0;font-size:20px;font-weight:800}
+.card .spec{font-size:14px;color:var(--muted)}
+.card .price{margin-top:auto;padding-top:14px;display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid var(--line)}
+.card .price b{font-size:24px;font-weight:800;letter-spacing:-.02em}
+.card .price span{font-size:14px;color:var(--olive-2);font-weight:700}
+.reward .note{margin-top:28px}
+
+/* faq */
+.faq{background:var(--cream)}
+.faq__list{margin:48px auto 0;max-width:860px;display:grid;gap:12px}
+details{border-radius:18px;background:#fff;overflow:hidden}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:72px;padding:20px 26px;font-size:18px;font-weight:700}
+summary::-webkit-details-marker{display:none}
+summary .q{color:var(--olive);margin-right:6px}
+summary::after{content:"+";flex-shrink:0;font-size:28px;font-weight:500;color:var(--red);line-height:1}
+details[open] summary::after{content:"\2212"}
+details .a{display:flex;gap:10px;padding:0 26px 24px;color:var(--ink-2);font-size:16px;line-height:1.75}
+details .a b{color:var(--red)}
+
+/* cta */
+.cta{background:var(--mint)}
+.cta__grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.cta__grid img{border-radius:28px;width:100%;max-height:620px;object-fit:cover}
+.cta h2{font-size:clamp(32px,4.6vw,54px);font-weight:800;line-height:1.3;letter-spacing:-.035em}
+.cta p{margin-top:18px}
+
+/* footer */
+.footer{background:var(--ink);color:#B9BDB2;padding:56px 0 120px;font-size:13px;line-height:1.8}
+.footer img{height:22px;width:auto;filter:brightness(0) invert(1);opacity:.85}
+.footer ul{margin:20px 0 0;padding-left:18px}
+.footer strong{color:#fff}
+
+/* sticky bar */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--line);display:none;align-items:center;gap:12px;transform:translateY(110%);transition:transform .25s ease}
+.sticky.is-on{transform:none}
+.sticky div{flex:1;line-height:1.3}
+.sticky small{display:block;font-size:12px;color:var(--muted)}
+.sticky b{font-size:16px}
+.sticky .btn{min-height:50px;padding:0 22px;font-size:16px}
+
+/* short version */
+.facts{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:520px}
+.facts div{padding:18px 20px;border-radius:16px;background:var(--cream)}
+.facts b{display:block;font-size:26px;font-weight:800;letter-spacing:-.03em;color:var(--red)}
+.facts span{font-size:14px;color:var(--ink-2)}
+.point-nav--static>div{border-radius:20px;overflow:hidden;background:var(--cream)}
+.point-nav--static>div>div{padding:18px 18px 22px}
+.point-nav--static p{font-size:15px}
+.point-nav--static p b{color:var(--olive)}
+.price-grid{margin-top:40px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.pc{position:relative;display:flex;flex-direction:column;gap:4px;padding:24px 22px;border-radius:20px;border:1px solid var(--line);background:#fff}
+.pc small{font-family:'BASAP Serif',serif;letter-spacing:.04em;color:var(--gold);font-size:13px}
+.pc h4{margin:0;font-size:19px;font-weight:800}
+.pc b{margin-top:14px;font-size:26px;font-weight:800;letter-spacing:-.02em}
+.pc span{font-size:14px;color:var(--olive-2);font-weight:700}
+.pc--best{border:3px solid var(--olive);background:var(--leaf-2)}
+.pc--best .card__flag{left:auto;right:16px}
+.pc--img{padding:0;overflow:hidden;border:0;background:var(--paper)}
+.pc--img img{width:100%;height:100%;object-fit:cover}
+@media (max-width:1024px){.price-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.facts{grid-template-columns:1fr}.price-grid{grid-template-columns:1fr}.pc--img{display:none}}
+
+/* reveal */
+.rv-in{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.rv-in.is-in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv-in{opacity:1;transform:none;transition:none}}
+
+/* responsive */
+@media (max-width:1024px){
+  .voice-grid{grid-template-columns:repeat(2,1fr)}
+  .point-nav{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .cards,.cards--2{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:860px){
+  .section,.point{padding:84px 0}
+  .nav{position:fixed;inset:68px 0 auto 0;flex-direction:column;align-items:stretch;gap:0;padding:8px 24px 20px;background:#fff;border-bottom:1px solid var(--line);display:none}
+  .nav.is-open{display:flex}
+  .nav a{padding:14px 0;font-size:17px;border-bottom:1px solid var(--cream)}
+  .nav .btn{margin-top:12px;border-bottom:0}
+  .menu-btn{display:block}
+  .hero__in,.problem__grid,.subway__grid,.adult__grid,.back__product,.diff__hero,.point__grid,.gift__grid,.cta__grid,.prev{grid-template-columns:1fr}
+  .hero__in{min-height:0;padding-top:40px;gap:32px}
+  .hero__img{order:-1}
+  .hero__badge{left:12px;bottom:12px}
+  .hero__stats{grid-template-columns:repeat(3,1fr);gap:12px}
+  .stress,.promise{grid-template-columns:1fr}
+  .stress__txt,.promise__txt{padding:40px 28px}
+  .back__stats{grid-template-columns:1fr}
+  .diff__cards{grid-template-columns:1fr}
+  .clin{grid-template-columns:1fr;padding:28px}
+  .clin__bars{justify-content:center}
+  .rv-grid{grid-template-columns:1fr}
+  .sticky{display:flex}
+  .cta__grid img{order:-1}
+}
+@media (max-width:560px){
+  .wrap{padding:0 20px}
+  .voice-grid,.point-nav,.steps,.cards,.cards--2{grid-template-columns:1fr}
+  .causes{grid-template-columns:1fr}
+  .research{flex-direction:column;align-items:flex-start}
+  .bar{grid-template-columns:80px 1fr auto}
+  .clin__bar i{width:84px}
+  .bonus{flex-direction:column;align-items:flex-start}
+  .who div{flex-direction:column;align-items:flex-start;gap:4px}
+}
+</style>
+</head>
+<body>
+
+<header class="header" id="top">
+  <div class="wrap header__in">
+    <a class="logo" href="#top" aria-label="BÁSAP 홈"><img src="assets/img/logo.svg" alt="BÁSAP" width="110" height="26"></a>
+    <button class="menu-btn" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="nav">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#23281F" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav" id="nav" aria-label="주요 메뉴">
+      <a href="#points">핵심 성분</a>
+      <a href="#clinical">시험 결과</a>
+      <a href="#reviews">후기</a>
+      <a href="#how">사용법</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn" href="#reward">얼리버드 보기</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero__in">
+    <div>
+      <span class="tag">와디즈 15,005% 달성 바삽의 신제품</span>
+      <h1 style="margin-top:20px">지하철에서 신경 쓰이던 정수리,<br>오늘부터 <span class="hl">샴푸부터</span> 바꾸세요</h1>
+      <p class="hero__sub">스트레스 속 탈모 불안을 안고 사는 당신을 위한<br><b>바삽 글라이신 리볼륨 샴푸</b></p>
+      <div class="hero__cta">
+        <a class="btn" href="#reward">얼리버드 혜택 보기</a>
+        <a class="btn btn--ghost" href="#points">핵심 성분 보기</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat"><b>1억 원+</b><span>누적 펀딩</span></div>
+        <div class="stat"><b>15,005%</b><span>최대 달성률</span></div>
+        <div class="stat"><b>3,000명</b><span>함께한 서포터</span></div>
+      </div>
+    </div>
+    <div class="hero__img">
+      <img src="assets/img/product-duo.jpg" alt="바삽 글라이신 리볼륨 헤어 로스 샴푸 2병" width="1536" height="1024" fetchpriority="high">
+      <div class="hero__badge"><b>글라이신 2%</b>20,000ppm 처방</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="section problem">
+  <div class="wrap">
+    <div class="problem__grid">
+      <div class="rv-in">
+        <p class="lead">평소 하루 50~100가닥이던 탈락량이,<br>심한 스트레스를 겪으면 하루 평균</p>
+        <div class="big300" aria-label="300가닥"><b>300</b><span>가닥</span></div>
+        <p class="h2" style="margin-top:8px">까지 늘 수 있습니다.</p>
+        <div class="bars" role="img" aria-label="하루 탈락량 비교: 평소 50~100가닥, 스트레스 시 약 300가닥">
+          <div class="bar"><span>평소</span><i style="width:33%"></i><strong>50~100</strong></div>
+          <div class="bar bar--hot"><span>스트레스 시</span><i style="width:100%"></i><strong>약 300</strong></div>
+        </div>
+        <div class="facts">
+          <div><b>10명 중 3명</b><span>스트레스를 ‘많이’ 느끼는 성인</span></div>
+          <div><b>10명 중 4명</b><span>탈모 진료 인원 중 20~30대</span></div>
+        </div>
+        <p class="note" style="margin-top:16px">출처: 미국피부과학회(AAD) · Harvard Health Publishing · 질병관리청 「2024 국민건강통계」 · 건강보험심사평가원 2024년 탈모 진료 통계</p>
+      </div>
+      <div class="problem__media rv-in">
+        <img src="assets/img/subway-crowd.png" alt="출근길 만원 지하철에서 내려다본 사람들의 정수리" width="1312" height="1199" loading="lazy">
+      </div>
+    </div>
+    <p class="h2 center rv-in" style="margin-top:72px;font-size:clamp(26px,3.4vw,40px)">탈모 관리는 이제 중장년이 아니라,<br><span class="hl">성인이 돼서부터</span> 필수입니다.</p>
+  </div>
+</section>
+
+<!-- DIFFERENCE -->
+<section class="section diff">
+  <div class="wrap">
+    <h2 class="h2 center">탈모 샴푸, 거기서 거기라고요?<br>바삽은 다릅니다.</h2>
+    <div class="diff__hero">
+      <img class="rv-in" src="assets/img/product-four.jpg" alt="베이지 석재 위에 나란히 놓인 바삽 글라이신 리볼륨 샴푸 4병" width="1536" height="1024" loading="lazy">
+      <div class="rv-in">
+        <p class="eyebrow">Glycine Re:Volume</p>
+        <div class="glycine"><b>글라이신 2%</b><span>20,000ppm</span></div>
+        <p class="lead" style="margin-top:12px">모발 단백질 케라틴을 이루는 아미노산, 글라이신을 처방의 중심에 두었습니다.</p>
+        <div class="diff__cards" style="margin-top:28px">
+          <div class="diff__card"><small>GLYCINE + SCALP</small><h3>두피 케어</h3></div>
+          <div class="diff__card"><small>GLYCINE + DAMAGE</small><h3>손상 모발 케어</h3></div>
+        </div>
+        <p class="diff__sum" style="text-align:left;margin-top:24px">따로 쓰던 두 가지 케어를 <b>샴푸 하나로, 한 번에.</b></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POINTS -->
+<section class="section points" id="points">
+  <div class="wrap">
+    <p class="eyebrow center">Essential Components</p>
+    <h2 class="h2 center" style="margin-top:12px">꼭 필요한 성분 <span class="red">4가지</span>만</h2>
+    <div class="point-nav point-nav--static">
+      <div><img src="assets/img/pt-glycine.jpg" alt="" width="756" height="500" loading="lazy"><div><small>01</small><h3>나노 글라이신</h3><p>모발 속 단백질을 채워 <b>강도 · 볼륨 UP</b></p></div></div>
+      <div><img src="assets/img/pt-bond.jpg" alt="" width="756" height="500" loading="lazy"><div><small>02</small><h3>황결합 복구 기술</h3><p>염색 · 펌 · 열로 끊어진 결합을 이어 <b>결합력 UP</b></p></div></div>
+      <div><img src="assets/img/pt-caffeine.jpg" alt="" width="756" height="500" loading="lazy"><div><small>03</small><h3>식물성 카페인 복합체</h3><p>비오틴 · 멘톨과 함께 <b>상쾌함 UP</b></p></div></div>
+      <div><img src="assets/img/pt-extract.jpg" alt="" width="756" height="500" loading="lazy"><div><small>04</small><h3>트러플 &amp; 부활초</h3><p>프리미엄 추출물로 <b>두피 · 모발 활력 UP</b></p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CLINICAL -->
+<section class="section clinical" id="clinical">
+  <div class="wrap">
+    <h2 class="h2 center">4주 후, 정수리 볼륨 <span class="hl">32.4% 개선</span><sup style="font-size:.5em;color:var(--muted)">*</sup> <span class="sample">예시</span></h2>
+    <div class="clin rv-in">
+      <div class="clin__bars" role="img" aria-label="정수리 볼륨 지수: 사용 전 100, 사용 4주 후 132.4">
+        <div class="clin__bar"><b>100</b><i style="height:150px;background:#CFC8BA"></i><em>사용 전</em></div>
+        <div class="clin__bar clin__bar--after"><b>132.4</b><i style="height:199px;background:var(--olive-2)"></i><em>사용 4주 후</em></div>
+      </div>
+      <div class="clin__meta">
+        <div><span>시험기관</span><b>더마큐브 피부임상센터</b></div>
+        <div><span>대상 · 기간</span><b>성인 남녀 30명 · 4주</b></div>
+      </div>
+    </div>
+    <p class="note center" style="margin-top:20px">* 3D 두피 이미지 분석, 사용 전 = 100 기준. 개인에 따라 결과는 다를 수 있습니다. · 시안용 예시 데이터</p>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section reviews" id="reviews">
+  <div class="wrap">
+    <h2 class="h2 center">먼저 써 본 분들의 이야기</h2>
+    <p class="lead center" style="margin-top:12px">이전 펀딩 노워시 트리트먼트를 <b>1,031명</b>이 먼저 경험했습니다.</p>
+    <div class="rv-grid" style="margin-top:40px">
+      <article class="rv"><div class="rv__top"><span class="stars" aria-label="별점 5점">★★★★★</span><span class="note">사용 2주차</span></div>
+        <h3>“감고 나면 두피까지 <mark>상쾌</mark>해요”</h3>
+        <p>멘톨 향이 과하지 않게 시원하고, 헹군 뒤에도 두피가 당기지 않아요.</p>
+        <footer>체험단 · 30대 직장인 A</footer></article>
+      <article class="rv"><div class="rv__top"><span class="stars" aria-label="별점 5점">★★★★★</span><span class="note">사용 4주차</span></div>
+        <h3>“뿌리 <mark>볼륨감</mark>이 살아나니 자신감도 같이”</h3>
+        <p>드라이하고 나면 납작하던 정수리 뿌리 볼륨이 달라요.</p>
+        <footer>체험단 · 20대 대학생 B</footer></article>
+      <article class="rv"><div class="rv__top"><span class="stars" aria-label="별점 5점">★★★★★</span><span class="note">사용 3주차</span></div>
+        <h3>“<mark>부드러운</mark>데 무겁지 않아요”</h3>
+        <p>탈모 샴푸는 뻣뻣하다는 편견이 깨졌어요. 떡지지 않아 볼륨도 오래 가요.</p>
+        <footer>체험단 · 20대 대학원생 C</footer></article>
+    </div>
+    <p class="note center" style="margin-top:20px">※ 제품을 무상 제공받아 작성한 체험단 예시 후기이며, 개인에 따라 결과는 다를 수 있습니다.</p>
+  </div>
+</section>
+
+<!-- HOW -->
+<section class="section how" id="how">
+  <div class="wrap">
+    <h2 class="h2 center">평소 감던 그대로, 샴푸만 바꾸세요</h2>
+    <div class="steps">
+      <div class="step"><img src="assets/img/step1-foam.jpg" alt="손바닥 위에 올린 풍성한 흰 샴푸 거품" width="600" height="480" loading="lazy"><div><span class="n">1</span><h3>거품 내기</h3><span class="time">약 1분</span></div></div>
+      <div class="step"><img src="assets/img/step2-massage.gif" alt="거품이 묻은 머리를 손가락 끝으로 마사지하는 애니메이션" width="450" height="360" loading="lazy"><div><span class="n">2</span><h3>두피 마사지</h3><span class="time">약 2분</span></div></div>
+      <div class="step"><img src="assets/img/step3-rinse.jpg" alt="위에서 떨어지는 물로 머리의 거품을 헹구는 뒷모습" width="600" height="480" loading="lazy"><div><span class="n">3</span><h3>헹구기</h3><span class="time">약 1분</span></div></div>
+      <div class="step step--gift"><img src="assets/img/step4-treatment.jpg" alt="바삽 노워시 트리트먼트를 손바닥에 짜는 모습" width="300" height="240" loading="lazy"><div><span class="n">4</span><h3>트리트먼트 마무리</h3><span class="time" style="background:var(--red);color:#fff">3병 세트 이상 증정</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- REWARD -->
+<section class="section reward" id="reward">
+  <div class="wrap">
+    <p class="eyebrow center">Reward</p>
+    <h2 class="h2 center" style="margin-top:12px">지금만 누리는 <span class="red">얼리버드 혜택</span></h2>
+    <p class="lead center" style="margin-top:12px">3병 이상 세트에는 와디즈 15,005% 달성 <b>노워시 트리트먼트</b>를 함께 드립니다.</p>
+    <div class="price-grid">
+      <div class="pc"><small>울트라 얼리버드</small><h4>12병 + 트리트먼트 3</h4><b>166,000원</b><span>병당 13,833원</span></div>
+      <div class="pc"><small>울트라 얼리버드</small><h4>10병 + 트리트먼트 2</h4><b>128,000원</b><span>병당 12,800원</span></div>
+      <div class="pc"><small>울트라 얼리버드</small><h4>6병 + 트리트먼트 1</h4><b>100,000원</b><span>병당 16,667원</span></div>
+      <div class="pc"><small>슈퍼 얼리버드</small><h4>4병 + 트리트먼트 1</h4><b>75,000원</b><span>병당 18,750원</span></div>
+      <div class="pc"><small>슈퍼 얼리버드</small><h4>3병 + 트리트먼트 1</h4><b>67,000원</b><span>병당 22,333원</span></div>
+      <div class="pc pc--best"><span class="card__flag">추천</span><small>슈퍼 얼리버드</small><h4>2병</h4><b>49,900원</b><span>병당 24,950원</span></div>
+      <div class="pc"><small>얼리버드</small><h4>1병</h4><b>21,900원</b><span>병당 21,900원</span></div>
+      <div class="pc pc--img"><img src="assets/img/set-12.jpg" alt="바삽 샴푸 12병과 트리트먼트 3개" width="1464" height="760" loading="lazy"></div>
+    </div>
+    <p class="note">※ 샴푸 300ml, 증정 트리트먼트 150ml. 병당 가격은 세트 가격을 샴푸 병 수로 나눈 금액입니다.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq" id="faq">
+  <div class="wrap">
+    <h2 class="h2 center">자주 묻는 질문</h2>
+    <div class="faq__list">
+      <details open><summary><span><span class="q">Q.</span>아직 탈모가 아닌데 써도 되나요?</span></summary><div class="a"><b>A.</b><span>네. 정수리가 가라앉거나 모발이 가늘어지기 시작했다면 미리 관리하기 좋습니다.</span></div></details>
+      <details><summary><span><span class="q">Q.</span>여성도 함께 쓸 수 있나요?</span></summary><div class="a"><b>A.</b><span>네. 남녀 구분 없이 사용할 수 있어 2병 세트로 함께 쓰기 좋습니다.</span></div></details>
+      <details><summary><span><span class="q">Q.</span>염색 · 펌 모발에도 쓸 수 있나요?</span></summary><div class="a"><b>A.</b><span>네. 시술 후 48시간이 지난 뒤부터 사용을 권장합니다.</span></div></details>
+      <details><summary><span><span class="q">Q.</span>배송은 언제 시작되나요?</span></summary><div class="a"><b>A.</b><span>펀딩 종료 후 2026년 12월 22일부터 순차 발송됩니다. (예시)</span></div></details>
+      <details><summary><span><span class="q">Q.</span>교환 · 환불은 어떻게 되나요?</span></summary><div class="a"><b>A.</b><span>제품 불량은 수령 후 7일 이내 교환해 드립니다. 단순 변심 환불은 펀딩 기간 중에만 가능합니다. (예시)</span></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta">
+  <div class="wrap cta__grid">
+    <div class="rv-in">
+      <p class="lead">내일 아침 지하철에선,<br>정수리 대신 <b>오늘 하루</b>를 생각할 수 있도록</p>
+      <h2 style="margin-top:12px">오늘부터 <span class="hl">샴푸부터</span><br>바꾸세요</h2>
+      <div class="hero__cta"><a class="btn" href="#reward">지금 펀딩하기</a></div>
+    </div>
+    <img class="rv-in" src="assets/img/product-frontback.jpg" alt="바삽 글라이신 리볼륨 탈모 샴푸 앞면과 뒷면" width="1720" height="1853" loading="lazy">
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <img src="assets/img/logo.svg" alt="BÁSAP" width="94" height="22">
+    <p style="margin-top:16px"><strong>바삽 글라이신 리볼륨 샴푸</strong> · Glycine Re:Volume Hair Loss Shampoo 300ml</p>
+    <ul>
+      <li>본 페이지는 시안(포트폴리오)용으로 제작되었으며, 인체적용시험 · 체험단 후기 · 원료사 자료 · FAQ 일부 수치는 예시 데이터입니다.</li>
+      <li>통계 출처: 미국피부과학회(AAD), Harvard Health Publishing, 질병관리청 「2024 국민건강통계」, 건강보험심사평가원 2024년 탈모 진료 통계.</li>
+      <li>자가진단은 의학적 진단이 아니며, 탈모가 의심되는 경우 전문의 상담을 권장합니다.</li>
+    </ul>
+    <p style="margin-top:20px">© BÁSAP. All rights reserved.</p>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky" aria-hidden="true">
+  <div><small>얼리버드 2병 세트</small><b>49,900원부터</b></div>
+  <a class="btn" href="#reward" tabindex="-1">펀딩하기</a>
+</div>
+
+<script>
+(function(){
+  var header=document.querySelector('.header');
+  var sticky=document.getElementById('sticky');
+  var reward=document.getElementById('reward');
+  function onScroll(){
+    var y=window.scrollY;
+    header.classList.toggle('is-scrolled',y>8);
+    var r=reward.getBoundingClientRect();
+    var inReward=r.top<window.innerHeight&&r.bottom>0;
+    var on=y>window.innerHeight*0.8&&!inReward;
+    sticky.classList.toggle('is-on',on);
+    sticky.setAttribute('aria-hidden',on?'false':'true');
+    sticky.querySelector('a').tabIndex=on?0:-1;
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  var btn=document.querySelector('.menu-btn'),nav=document.getElementById('nav');
+  btn.addEventListener('click',function(){
+    var open=nav.classList.toggle('is-open');
+    btn.setAttribute('aria-expanded',open?'true':'false');
+    btn.setAttribute('aria-label',open?'메뉴 닫기':'메뉴 열기');
+  });
+  nav.addEventListener('click',function(e){
+    if(e.target.tagName==='A'){nav.classList.remove('is-open');btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-label','메뉴 열기');}
+  });
+
+  var boxes=document.querySelectorAll('.check input'),msg=document.getElementById('checkMsg');
+  function upd(){
+    var n=0;boxes.forEach(function(b){if(b.checked)n++;});
+    msg.innerHTML=n===0?'하나라도 해당된다면,':'<span id="checkCount">'+n+'개</span> 해당됩니다. 그렇다면,';
+  }
+  boxes.forEach(function(b){b.addEventListener('change',upd);});
+
+  var items=document.querySelectorAll('.rv-in');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('is-in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px'});
+    items.forEach(function(el){io.observe(el);});
+  }else{items.forEach(function(el){el.classList.add('is-in');});}
+})();
+</script>
+</body>
+</html>
